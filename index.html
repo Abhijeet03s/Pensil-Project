@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Pencil</title>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/cc70fa30b0.js" crossorigin="anonymous"></script>
+    <!-- Crisp CDN -->
+    <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = 'b894a05a-6270-4925-b49a-e5a238d9a407';
+      (function () {
+        d = document;
+        s = d.createElement('script');
+        s.src = 'https://client.crisp.chat/l.js';
+        s.async = 1;
+        d.getElementsByTagName('head')[0].appendChild(s);
+      })();
+    </script>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- AOS ANIMATION CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Google Font  CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Third Party Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: '480px',
+
+            cs: '600px',
+
+            md: '768px',
+
+            lg: '1024px',
+
+            xl: '1280px',
+
+            '2xl': '1536px',
+          },
+          extend: {
+            colors: {
+              mainBgColor: '#1f1f1f',
+              blue: '#2b95ff',
+              lightBlue: '#d4e9ff',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Nunito', sans-serif;
+      }
+    </style>
+  </head>
+  <!--  -->
+
+  <body>
+    <header>
+      <div class="navbar container lg:px-10 my-2 font-['Inter'] ">
+        <div class="flex-1">
+          <a class=""><img src="./assets/61603eebe2de9c6ea99ba69a_pensil logo svg.svg" alt="logo"></a>
+        </div>
+        <div class="flex-none ">
+          <ul class="hidden lg:flex menu menu-horizontal p-0">
+            <li tabindex="0">
+              <a class="hover:-translate-y-[1px] hover:scale-105 duration-150">
+                Use Case
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24">
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                </svg>
+              </a>
+              <ul class="p-2 bg-base-100 ">
+                <li><a>Cohort Based Courses</a></li>
+                <li><a>Startup or Brand Community</a></li>
+                <li><a>Mentors or Coaches</a></li>
+              </ul>
+            </li>
+            <li tabindex="0">
+              <a class="hover:-translate-y-[1px] hover:scale-105 duration-150">
+                Resources
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24">
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                </svg>
+              </a>
+              <ul class="p-2 bg-base-100">
+                <li><a>Integration</a></li>
+                <li><a>Blog</a></li>
+                <li><a>What's New</a></li>
+              </ul>
+            </li>
+            <li><a class="hover:-translate-y-[1px] hover:scale-105 duration-150">Pricing</a></li>
+          </ul>
+          <div class="items-center flex-shrink-0 hidden lg:flex">
+            <button
+              class="self-center mx-2 px-8 py-3 rounded hover:bg-white hover:text-black hover:-translate-y-[3px] hover:scale-105 duration-150">Log
+              In</button>
+            <button
+              class="self-center px-5 py-3 font-semibold rounded dark:bg-blue  dark:text-white hover:-translate-y-[3px] hover:scale-105 duration-150">Try
+              for
+              Free</button>
+          </div>
+          <button class="p-4 lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"
+              class="w-6 h-6 dark:text-gray-100">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main>
+      <div class="flex flex-col py-10 bg-white text-black">
+        <!-- community -->
+        <div class="hero py-20 font-['Montserrat']">
+          <div class="hero-content flex-col-reverse lg:flex-row">
+            <video class="lg:max-w-2xl rounded-lg shadow-2xl hover:-translate-y-[1px] hover:scale-105 duration-150"
+              id="40c8bdc3-257a-519a-bc71-f89559dbbb96-video " autoplay="" loop=""
+              style="background-image:url(&quot;https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/6299e2bcea253e73171caaf9_ezgif-4-a326cbc4b0-poster-00001.jpg&quot;)"
+              muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source
+                src="https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/6299e2bcea253e73171caaf9_ezgif-4-a326cbc4b0-transcode.mp4"
+                data-wf-ignore="true">
+              <source
+                src="https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/6299e2bcea253e73171caaf9_ezgif-4-a326cbc4b0-transcode.webm"
+                data-wf-ignore="true">
+            </video>
+            <div class="space-y-5">
+              <h1 class="text-3xl lg:text-5xl font-extrabold text-center text-black">One platform for all your community
+                needs</h1>
+              <h1 class="text-xl lg:text-5xl flex flex-row justify-center text-blue font-extrabold ">Try for free <img
+                  class="w-4 lg:w-8" src="./assets/angle-right 1 blue.svg" alt=""> </h1>
+            </div>
+          </div>
+        </div>
+        <!-- sponsors -->
+        <section class="bg-blue-100 text-gray-100">
+          <div class="container px-2 py-12 mx-auto text-center lg:px-44 lg:py-20">
+            <div class="flex flex-wrap justify-center">
+              <img src="./assets/sponsors/Frame 908.png" alt="" />
+              <img src="./assets/sponsors/Frame 910.png" alt="">
+              <img src="./assets/sponsors/Frame 911.png" alt="">
+              <img src="./assets/sponsors/Frame 912.png" alt="">
+              <img src="./assets/sponsors/Kinship logo.png" alt="">
+              <img src="./assets/sponsors/Planet Spark.png" alt="">
+              <img src="./assets/sponsors/RMonk.png" alt="">
+              <img src="./assets/sponsors/UG.png" alt="">
+              <img src="./assets/sponsors/unschool Logo.png" alt="">
+              <img src="./assets/sponsors/pedal Start.png" alt="">
+            </div>
+          </div>
+        </section>
+        <!-- section -->
+        <div class="text-3xl lg:text-[2.8rem] text-center font-bold mt-12 lg:mt-24 px-12">
+          <h1>Improve retention, growth and advocacy with the all-in-one community engagement platform</h1>
+        </div>
+        <!-- designed -->
+        <div class="hero min-h-screen">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="./assets/hero-image.jpg"
+              class="lg:max-w-3xl rounded-lg shadow-2xl hover:translate-y-[1px] hover:scale-105 duration-150" />
+            <div class="p-8 text-center lg:text-left">
+              <h1 class="text-2xl lg:text-4xl font-extrabold">Designed for all usecases</h1>
+              <p class="py-6 font-medium text-xl">From open discussion to gated content. Create different groups for all
+                kind of
+                use case,
+                like coaching, mentoring, courses, forums, live classes etc</p>
+              <small>Replaces</small>
+              <h3 class="font-bold">Slack OR Discord OR Forum</h3>
+            </div>
+          </div>
+        </div>
+        <!-- your community -->
+        <div class="hero min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="./assets/hero-image.jpg"
+              class="lg:max-w-3xl rounded-lg shadow-2xl hover:translate-y-[1px] hover:scale-105 duration-150" />
+            <div class="p-8 text-center lg:text-left">
+              <h1 class="text-2xl lg:text-4xl font-extrabold">Your Community. Your Branding.</h1>
+              <p class="py-6 font-medium text-xl">Design your community to match your branding. Make it feel like your
+                own
+                product with complete customization & integration, including mobile app
+              </p>
+              <small>Avoids</small>
+              <h3 class="font-bold">Custom development</h3>
+            </div>
+          </div>
+        </div>
+        <!-- live session -->
+        <div class="bg-gray-800 text-gray-50 py-16">
+          <h1 class="text-4xl text-center mb-5 font-extrabold">🔴 Live Sessions</h1>
+          <div class="container grid grid-cols-12 mx-auto">
+            <div
+              class="flex flex-col p-4 justify-center col-span-12 align-middle bg-no-repeat bg-cover lg:col-span-6 lg:h-auto">
+              <img src="./assets/video calling.png" alt="">
+            </div>
+            <div class="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 divide-gray-700">
+              <div class="pt-6 pb-4 space-y-4">
+                <h1 class="text-xl lg:text-3xl font-bold">Immersive Experince</h1>
+                <p class="font-semibold">Conduct Live sessions or webinar, get the best audio video quality</p>
+              </div>
+              <div class="pt-6 pb-4 space-y-4">
+                <h1 class="text-xl lg:text-3xl font-bold">Host Event with Live QnA</h1>
+                <p class="font-semibold">Invite hosts, moderator & get the best live experience for your commmunity</p>
+              </div>
+              <div class="pt-6 pb-4 space-y-4">
+                <h1 class="text-xl lg:text-3xl font-bold">Share your live recordings</h1>
+                <p class="font-semibold">Share or post recording on Youtube, Facebook, Vimeo, or any other platform</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-col justify-center items-center text-black py-12 text-center lg:text-left space-y-4">
+          <h1 class="text-3xl font-bold lg:text-5xl">The Whole Package</h1>
+          <p class="text-xl lg:text-2xl">Right tools to strengthen your community</p>
+        </div>
+        <div class="flex flex-row justify-center items-center flex-wrap gap-12 p-5 lg:p-0">
+          <div class="flex flex-col max-w-sm p-6 space-y-6 overflow-hidden rounded-lg shadow-md text-black">
+            <div>
+              <video muted="muted" data-play="hover" autoplay="autoplay">
+                <source src="./assets/95.mp4">
+              </video>
+              <h2 class="mb-1 text-2xl font-bold">SEO Content</h2>
+              <p class="text-lg">Rank higher in google search result with SEO optimized content</p>
+            </div>
+          </div>
+          <div class="flex flex-col max-w-sm p-6 space-y-6 overflow-hidden rounded-lg shadow-md text-black">
+            <div>
+              <video muted="muted" data-play="hover" autoplay="autoplay">
+                <source src="./assets/seo-2.mp4">
+              </video>
+              <h2 class="mb-1 text-2xl font-bold">Gamification</h2>
+              <p class="text-lg">Engage community with karmapoints, badges, milestore etc</p>
+            </div>
+          </div>
+          <div class="flex flex-col max-w-sm p-6 space-y-6 overflow-hidden rounded-lg shadow-md text-black">
+            <div>
+              <img src="./assets/ca.PNG" alt="" class=" sm:h-84">
+              <h2 class="mb-1 text-2xl font-bold">Dedicated Servers</h2>
+              <p class="text-lg">Scale as you grow with dedicated server for community of any size</p>
+            </div>
+          </div>
+          <div class="flex flex-col max-w-sm p-6 space-y-6 overflow-hidden rounded-lg shadow-md text-black">
+            <div>
+              <img src="./assets/rj47UU5N2mciJ.jpeg" alt="" class=" sm:h-84">
+              <h2 class="mb-1 text-2xl font-bold">Embed Custom Pages</h2>
+              <p class="text-lg">Add your website, e-commerce page or anything with simple script</p>
+            </div>
+          </div>
+          <div class="flex flex-col max-w-sm p-6 space-y-6 overflow-hidden rounded-lg shadow-md text-black">
+            <div>
+              <video muted="muted" data-play="hover" autoplay="autoplay">
+                <source src="./assets/bunch.mp4">
+              </video>
+              <h2 class="mb-1 text-2xl font-bold">Bunch of Integration</h2>
+              <p class="text-lg">Plug with other tolls which you already using and brings the best of
+                both the world</p>
+            </div>
+          </div>
+          <div class="flex flex-col max-w-sm p-6 space-y-6 overflow-hidden rounded-lg shadow-md text-black">
+            <div>
+              <video muted="muted" data-play="hover" autoplay="autoplay">
+                <source src="./assets/news.mp4">
+              </video>
+              <h2 class="mb-1 text-2xl font-bold">Newsletter</h2>
+              <p class="text-lg">Wont it be great if you could just send newsletter from your community,
+                well its almost here</p>
+            </div>
+          </div>
+        </div>
+        <!-- review -->
+        <section class="py-10 bg-gray-800">
+          <div class="container flex flex-col items-center p-4 mx-auto space-y-6 md:p-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+              class="w-16 h-16 text-violet-400">
+              <polygon
+                points="328.375 384 332.073 458.999 256.211 406.28 179.924 459.049 183.625 384 151.586 384 146.064 496 182.756 496 256.169 445.22 329.242 496 365.936 496 360.414 384 328.375 384">
+              </polygon>
+              <path
+                d="M415.409,154.914l-2.194-48.054L372.7,80.933,346.768,40.414l-48.055-2.2L256,16.093,213.287,38.219l-48.055,2.2L139.3,80.933,98.785,106.86l-2.194,48.054L74.464,197.628l22.127,42.715,2.2,48.053L139.3,314.323l25.928,40.52,48.055,2.195L256,379.164l42.713-22.126,48.055-2.195,25.928-40.52L413.214,288.4l2.195-48.053,22.127-42.715Zm-31.646,76.949L382,270.377l-32.475,20.78-20.78,32.475-38.515,1.76L256,343.125l-34.234-17.733-38.515-1.76-20.78-32.475L130,270.377l-1.759-38.514L110.5,197.628,128.237,163.4,130,124.88,162.471,104.1l20.78-32.474,38.515-1.76L256,52.132l34.234,17.733,38.515,1.76,20.78,32.474L382,124.88l1.759,38.515L401.5,197.628Z">
+              </path>
+            </svg>
+            <p
+              class="px-6 py-2 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-4xl lg:max-w-2xl xl:max-w-4xl text-white">
+              "Pensil is super. We were looking to integrate with Circle based out of US but this made us change the
+              game plan."</p>
+            <div class="flex justify-center items-center space-x-3 text-white">
+              <img src="./assets/karan.png" alt="" class="w-20 h-20 bg-center bg-cover rounded-md">
+              <div>
+                <p class="leading-tight">Karan Mehra</p>
+                <p class="text-sm leading-tight">CEO at TykeInvest</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- mobile app-->
+        <div class="hero lg:min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="./assets/mobile-1.png" class="w-[5%] rounded-lg shadow-2xl" />
+            <img src="./assets/mobile-1.png" class="w-[5%] rounded-lg shadow-2xl" />
+            <img src="./assets/mobile-1.png" class="w-[5%] rounded-lg shadow-2xl" />
+            <div class="text-center lg:text-left ">
+              <h1 class="text-3xl lg:text-5xl font-extrabold">Mobile app for your community</h1>
+              <p class="py-6 lg:text-2xl">Get complete custom branded app for you community & give your community the
+                experince they
+                deserve.
+              </p>
+              <button class="btn bg-blue border-none text-white">Get Mobile App</button>
+            </div>
+          </div>
+        </div>
+        <!-- Dev -->
+        <section class="text-gray-600 bg-gray-800 lg:px-24 py-10">
+          <h1 class="text-3xl lg:text-5xl text-center mt-12 text-white font-extrabold">Made For Developers, By
+            Developers</h1>
+          <div class="container mx-auto flex p-12 lg:p-24 md:flex-row flex-col items-center">
+            <div
+              class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <p class="mb-8 leading-relaxed text-white text-lg lg:text-xl">From easy integrations to deploy your own
+                front end, we
+                have
+                everything
+                you need to get started. Integrate with our SDKs. Some SDKs may require some additional configuration
+                through your Dev Portal.</p>
+              <div class="flex justify-center text-yellow-500 text-2xl">
+                <a href="">Explore More</a><img class="h-6 lg:h-7" src="./assets/yellow arrow.png" alt="">
+              </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+              <img src="./assets/code.png"
+                class="lg:max-w-xl rounded-lg shadow-2xl hover:-translate-[5px] hover:scale-105 duration-150" />
+            </div>
+          </div>
+        </section>
+        <!-- testimonials -->
+        <section class="my-8 text-gray-100">
+          <div class="container flex flex-col items-center mx-auto mb-12 md:p-10 md:px-12">
+            <h1 class="p-4 text-4xl font-bold leading-none text-center text-black">What our customers are saying</h1>
+          </div>
+          <div
+            class="container flex flex-col items-center justify-center mx-auto lg:flex-row flex-wrap lg:justify-evenly lg:px-5">
+            <div class="flex flex-col max-w-xs mx-4 my-6 shadow-lg">
+              <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12">
+                <p class="relative px-6 py-1 text-lg italic text-center text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="w-8 h-8 text-black">
+                    <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                    <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                  </svg>"We use the Pensil platform to interlink all our rural libraries and also to connect city
+                  volunteers with students in villages in Rural Lucknow"
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="absolute right-0 w-8 h-8 text-black">
+                    <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                    <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                  </svg>
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center p-8 rounded-b-lg bg-gray-900 text-white">
+                <img src="assets/user/anurag.png" alt=""
+                  class="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full bg-gray-500 bg-gray-700">
+                <p class="text-xl font-semibold leading-tight">Anurag Trivedi</p>
+                <p class="text-sm">Shaan Foundation</p>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-xs mx-4 my-6 shadow-lg">
+              <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 ">
+                <p class="relative px-6 py-1 text-lg italic text-center text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="w-8 h-8 text-black">
+                    <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                    <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                  </svg>"I love the platform, ❤️❤️.
+                  All our students use Pensil for internal communication and academics.
+                  It has been awesome working with the Pensil team".
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="absolute right-0 w-8 h-8 text-black">
+                    <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                    <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                  </svg>
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center p-8 rounded-b-lg bg-gray-900 text-white">
+                <img src="./assets/user/hetal.png" alt=""
+                  class="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full bg-gray-500 bg-gray-700">
+                <p class="text-xl font-semibold leading-tight">Hetal Mundra</p>
+                <p class="text-sm">Somaiya Design School</p>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-xs mx-4 my-6 shadow-lg">
+              <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-blue-300">
+                <p class="relative px-6 py-1 text-lg italic text-center text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="w-8 h-8 text-black">
+                    <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                    <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                  </svg>"I run UPSC cohorts on Pensil. It is different from other applications - it is more fun,
+                  connects everyone and lets us study together."
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="absolute right-0 w-8 h-8 text-black">
+                    <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                    <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                  </svg>
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center p-8 rounded-b-lg bg-blue text-gray-900">
+                <img src="./assets/user/abhijeet.png" alt=""
+                  class="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full bg-gray-500 bg-gray-700">
+                <p class="text-xl font-semibold leading-tight">Abhijeet Yadav</p>
+                <p class="text-sm">Perlims Focus Group</p>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-xs mx-4 my-6 shadow-lg">
+              <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 ">
+                <p class="relative px-6 py-1 text-lg italic text-center text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="w-8 h-8 text-black">
+                    <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                    <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                  </svg>"Pensil is super. We were looking to integrate with Circle based out of US but this made us
+                  change the game plan."
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="absolute right-0 w-8 h-8 text-black">
+                    <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                    <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                  </svg>
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center p-8 rounded-b-lg bg-gray-900 text-white">
+                <img src="./assets/karan.png" alt=""
+                  class="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full bg-gray-500 bg-gray-700">
+                <p class="text-xl font-semibold leading-tight">Karan Mehra</p>
+                <p class="text-sm">Tyke Invest</p>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-xs mx-4 my-6 shadow-lg">
+              <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-blue-300">
+                <p class="relative px-6 py-1 text-lg italic text-center text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="w-8 h-8 text-black">
+                    <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                    <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                  </svg>"We are building a community for freelancers in the Middle East. Pensil provides a nice little
+                  place for us to come together."
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="absolute right-0 w-8 h-8 text-black">
+                    <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                    <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                  </svg>
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center p-8 rounded-b-lg bg-blue text-gray-900">
+                <img src="./assets/user/yellow.png" alt=""
+                  class="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full bg-gray-500 bg-gray-700">
+                <p class="text-xl font-semibold leading-tight">Abed Mousley</p>
+                <p class="text-sm ">Tapflow.com</p>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-xs mx-4 my-6 shadow-lg">
+              <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 ">
+                <p class="relative px-6 py-1 text-lg italic text-center text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="w-8 h-8 text-black">
+                    <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                    <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                  </svg>"Love the slick minimalism and easy to use design on the community platform. It has everything
+                  one will need."
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="absolute right-0 w-8 h-8 text-black">
+                    <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                    <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                  </svg>
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center p-8 rounded-b-lg bg-gray-900 text-white">
+                <img src="./assets/user/blue.png" alt=""
+                  class="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full bg-gray-500 bg-gray-700">
+                <p class="text-xl font-semibold leading-tight">Jon Henson Grič</p>
+                <p class="text-sm ">CyptoTap</p>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-xs mx-4 my-6 shadow-lg">
+              <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 ">
+                <p class="relative px-6 py-1 text-lg italic text-center text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="w-8 h-8 text-black">
+                    <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                    <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                  </svg>"I like what i see. Pensil has neat sections for different topics and i can make them on my own.
+                  Plus in-built video tool is very useful"
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="absolute right-0 w-8 h-8 text-black">
+                    <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                    <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                  </svg>
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center p-8 rounded-b-lg bg-gray-900 text-white">
+                <img src="./assets/user/sheri.png" alt=""
+                  class="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full bg-gray-500 bg-gray-700">
+                <p class="text-xl font-semibold leading-tight">Sheri Staffiery</p>
+                <p class="text-sm">theheartway.org</p>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-xs mx-4 my-6 shadow-lg">
+              <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-blue-300">
+                <p class="relative px-6 py-1 text-lg italic text-center text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="w-8 h-8 text-black">
+                    <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                    <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                  </svg>"I love Pensil, This is great. Good to see world class product coming from India. Keep growing"
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" fill="currentColor"
+                    class="absolute right-0 w-8 h-8 text-black">
+                    <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                    <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                  </svg>
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center p-8 rounded-b-lg bg-blue text-gray-900">
+                <img src="./assets/user/lalit.png" alt=""
+                  class="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full bg-gray-500 bg-gray-700">
+                <p class="text-xl font-semibold leading-tight">Lalit Tyagi</p>
+                <p class="text-sm">brightdirectories.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- blogs -->
+        <section>
+          <div class="container p-12 lg:p-24 mx-auto">
+            <div class="flex flex-col lg:flex-row justify-between items-center my-5 space-y-5">
+              <h1 class="text-3xl lg:text-4xl font-bold">Community Blogs</h1>
+              <button
+                class="text-blue text-base lg:text-lg border border-blue p-2 lg:p-3 rounded-lg border-[2px] font-semibold">Read
+                More</button>
+            </div>
+            <div class="flex flex-wrap -mx-4 -mb-10 text-center font-['Inter']">
+              <div class="lg:w-1/2 mb-10 px-4">
+                <div class="rounded-lg h-80 overflow-hidden">
+                  <img alt="content" class="object-cover object-center h-full w-full"
+                    src="./assets/twitter banner iamge.png">
+                </div>
+                <h2 class="title-font text-2xl font-semibold text-gray-900 mt-6 mb-3">Twitter guide for beginners</h2>
+                <p class="leading-relaxed text-base font-[400] text-gray-500">Twitter is a terrific social media
+                  marketing tool if used
+                  correctly, but there is a learning curve. As a business owner, it's critical that you learn the
+                  fundamentals of social media and how to utilise it to increase brand recognition and marketing
+                  efforts.</p>
+              </div>
+              <div class="lg:w-1/2 mb-10 px-4">
+                <div class="rounded-lg h-80 overflow-hidden">
+                  <img alt="content" class="object-cover object-center h-full w-full"
+                    src="./assets/future of community.png">
+                </div>
+                <h2 class="title-font text-2xl font-semibold text-gray-900 mt-6 mb-3">Community building &amp; the
+                  future
+                  it holds</h2>
+                <p class="leading-relaxed text-base font-[400] text-gray-500">Future of community would be something to
+                  look for, as these small
+                  micro social media alternative community are rising up. There are few key element in its DNA that will
+                  evolve with time. Lets look at what will be the future of community.</p>
+              </div>
+              <div class="lg:w-1/2 mb-10 px-4">
+                <div class="rounded-lg h-80 overflow-hidden">
+                  <img alt="content" class="object-cover object-center h-full w-full" src="./assets/manage time.png">
+                </div>
+                <h2 class="title-font text-2xl font-semibold text-gray-900 mt-6 mb-3">9 tips for managing your time more
+                  productively</h2>
+                <p class="leading-relaxed text-base font-[400] text-gray-500">Daily productivity, it turns out, is both
+                  a science and an art. To
+                  make the most of your time, you must discover a system that works for you, tools to supplement your
+                  processes, and, more often than not, a mentality shift: away from distracted thinking and
+                  disorganization and toward clarity and deliberate action.</p>
+              </div>
+              <div class="lg:w-1/2 mb-10 px-4">
+                <div class="rounded-lg h-80 overflow-hidden">
+                  <img alt="content" class="object-cover object-center h-full w-full"
+                    src="./assets/Vanilla Forums Alternative.jpg">
+                </div>
+                <h2 class="title-font text-2xl font-semibold text-gray-900 mt-6 mb-3">Pensil, a powerful alternative to
+                  Vanilla Forums</h2>
+                <p class="leading-relaxed text-base font-[400] text-gray-500">Forums have an unjustified reputation of
+                  being outdated. This is
+                  why one of your goals should be to find the best community forum software to fight this misconception.
+                  So what features exactly should you look for in Modern Community Platforms ?</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact -->
+        <section class="">
+          <div class="container lg:p-24 p-12 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+              <h1 class="sm:text-3xl text-3xl font-bold title-font mb-4 text-gray-900">Get in touch</h1>
+              <p class="lg:w-2/3 mx-auto leading-relaxed text-2xl font-medium">Interested in exploring our product and
+                services on
+                a demo, getting a quote or do you just want to send an email?</p>
+            </div>
+            <div class="flex flex-wrap">
+              <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 shadow-lg space-y-5">
+                <img class="w-12" src="./assets/PokerChip.svg" alt="">
+                <h2 class="text-lg sm:text-2xl text-gray-900 font-medium title-font mb-2">Request a demo</h2>
+                <p class="leading-relaxed text-lg mb-4">Book time in our calendar to learn more about our product and
+                  services.</p>
+              </div>
+              <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 shadow-lg space-y-5">
+                <img class="w-12" src="./assets/Swatches.svg" alt="">
+                <h2 class="text-lg sm:text-2xl text-gray-900 font-medium title-font mb-2">Get a quote</h2>
+                <p class="leading-relaxed text-lg mb-4">Fill out information about your use-case and request a quote
+                  from us.</p>
+              </div>
+              <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 shadow-lg space-y-5">
+                <img class="w-12" src="./assets/RocketLaunch.svg" alt="">
+                <h2 class="text-lg sm:text-2xl text-gray-900 font-medium title-font mb-2">Email Sales</h2>
+                <p class="leading-relaxed text-lg mb-4">Contact our Sales team with any questions or query you might
+                  have.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="text-gray-600 body-font lg:px-24 font-['Inter']">
+          <hr class="hidden lg:flex h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
+          <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left space-y-4">
+              <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img class="w-44" src="./assets/61603eebe2de9c6ea99ba69a_pensil logo svg.svg" alt="">
+              </a>
+              <p class="mt-2 text-sm text-gray-500">© Pensil. All Rights Reserved.</p>
+              <span class="text-blue font-bold">Made with ❤️ from India</span>
+              <h3>Privacy Policy</h3>
+              <h3>Terms &amp; Conditions</h3>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">Pensil</h2>
+                <nav class="list-none mb-10 space-y-2">
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Try For Free</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Mobile App</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Product Overview</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Pricing</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Watch Demo</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Email Us</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">Resources</h2>
+                <nav class="list-none mb-10 space-y-2">
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Updates</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Blog</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Integration</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Road Map</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Pensil Commmunity</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">Comapare</h2>
+                <nav class="list-none mb-10 space-y-2">
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Discourse</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Discord</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Mighty Network</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Tribe</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Circle</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">Follow Us On</h2>
+                <nav class="list-none mb-10 space-y-2">
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Twitter</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">LinkedIn</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-600 hover:text-gray-800">Facebook</a>
+                  </li>
+
+                </nav>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+
+</html>
