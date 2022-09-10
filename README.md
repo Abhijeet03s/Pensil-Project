@@ -16,7 +16,7 @@ This Community Landing page is allows users to join the groups and grow their co
 
 ## Time taken to finish this project⏲
 
--  Around 2-3 days.
+-  Around 3-4 days.
 
 #### Screenshot
 
